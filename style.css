@@ -171,15 +171,16 @@ ul {
 .inputform {
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: #1a1a1a;
     width: 500px;
     height: auto;
-    /* position: relative; */
-    /* position:absolute; */
-    margin: auto;
-    /* left: 50%; */
-    /* top: 50%; */
+    position: absolute;
     padding: 50px;
+    left: 27.5%;
+    top: 12.5%;
+    justify-content: center;
+    border: 1px solid#808080 ;
+    border-radius: 5px;
 }
 
 .textfield {
@@ -217,14 +218,23 @@ ul {
     text-decoration: none;
     margin: 7px;
     font-size: 14px;
-
     font-family: 'Sono', sans-serif;
 }
 
-form {
 
-    margin: 20px 10px;
-    margin-bottom: 0px;
+.uploadButton{
+    width: 300px;
+    position: relative;
+    margin: 25px;
+    padding: 7px;
+    left: 37.5%;
+    top: 80vh;
+    font-size: 14px;
+    border: 1px #808080 solid;
+    border-radius: 5px;
+    color: white;
+    background-color: #555;
+
 }
 
 .butons {
@@ -366,11 +376,11 @@ form {
 /* WATCH */
 
 
-#video-play{
+#video-span{
 
     height: 55%;
     width: 55%;
-    position: relative;
+    position: absolute;
     top: 15vh;
     left: 7vw;
 }

@@ -20,9 +20,10 @@
         </div>
         
         <ul>
-            <li id="ba"><a href="../home"><i class="fa-solid fa-bars fa-1.5x"></i></a></li>
-            <li id="but"><i href="../profile" class="fa-solid fa-user"></i></input></li>
-            <li id="add"><a href="../upload"><i onclick ="upload()" class="fa-solid fa-plus"></i></a></li>
+            <li id="ba"><a><i class="fa-solid fa-bars"></i></a></li>
+            <li id="but"><i class="fa-solid fa-user"></i></input></li>
+            <li id="bell"><i class="fa-regular fa-bell"></i></input></li>
+            <li id="add"><a href="./upload.html"><i class="fa-solid fa-video"></i></a></li>
         </ul>
     
         <div class="searchdiv">
@@ -34,6 +35,7 @@
     </nav>
 
     <form class="inputform" method="post">
+
 
         <label class="labels" class="uploadv" for="title">title</label>
         <input class="inputs" class="uploadv textfield" id="title" type="text">
@@ -47,9 +49,12 @@
         <label class="labels" class="uploadv" for="video">video</label>
         <input class="inputs" class="uploadv" id="video" type="file" accept="video/*"></input>
 
-        <input type="button" value="Upload Video">
-
     </form>
+
+    <button class="uploadButton" >
+        Upload Video
+
+    </button> 
 
 </body>
 </html>
