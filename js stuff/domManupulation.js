@@ -1,18 +1,9 @@
 function s() {
 
-    // const para = document.getElementById("para")
-    // if(para.innerHTML=="Hi there"){
-    //     para.innerHTML = "this is modified text"
-    // }else{
-    //     para.innerHTML = "Hi there"
-    // }
-
     const newDiv = document.createElement("h1");
-    const newContent = document.createTextNode("Hi there and greetings!");
-
-    // add the text node to the newly created div
-    
+    const newContent = document.createTextNode("Hi there and greetings!");    
     const currentDiv = document.getElementById("para");
+    currentDiv.style.color = "red"
 
     let getRequest = fetch("https://catfact.ninja/fact")
 
@@ -23,10 +14,6 @@ function s() {
         newDiv.appendChild(newContent);
 
     })
-    // getRequest.catch(a => {
-    //     console.log(a)
-    // }
-    // )
 
     document.body.insertBefore(newDiv, currentDiv);
 
